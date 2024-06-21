@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Afshar - Archi-Tourism Academician</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background-color: #1a1a2e;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #16213e;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #0f3460;
+            overflow: hidden;
+        }
+        nav a, .dropdown .dropbtn {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover, .dropdown:hover .dropbtn {
+            background-color: #1a1a2e;
+        }
+        .dropdown {
+            float: left;
+            overflow: visible;
+        }
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #0f3460;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #1a1a2e;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .submenu {
+            position: relative;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #e5e5e5;
+            color: #000000;
+            border-radius: 8px;
+        }
+        .hidden {
+            display: none;
+        }
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ali Afshar</h1>
+        <p>Archi-Tourism Academician</p>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showSection('about')">About Me</a>
+        <div class="dropdown">
+            <button class="dropbtn">Professional Activities</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showSection('professional-cv')">CV</a>
+                <a href="#" onclick="showSection('professional-projects')">Projects</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Academic Activities</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showSection('academic-cv')">CV</a>
+                <a href="#" onclick="showSection('academic-publications')">Journal Publications and Refereed Conferences</a>
+                <a href="#" onclick="showSection('academic-supervisory')">Supervisory</a>
+            </div>
+        </div>
+        <a href="#" onclick="showSection('other')">Other Activities</a>
+        <a href="#" onclick="showSection('contact')">Contact Me</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p><strong>Education:</strong><br>
+            2013 PhD in Architectural Studies, Faculty of Design and Architecture, University Putra Malaysia, MALAYSIA<br>
+            1996 B. A. and M.A. in Architecture, Faculty of Fine Arts, University of Tehran, IRAN
+        </p>
+        <p>I possess a Ph.D. in Architectural Studies from the University Putra Malaysia and a Master's 
+        degree in Architectural Engineering from the Faculty of Fine Arts at the University of Tehran. 
+        Additionally, I have been a faculty member at Eqbal Lahoori Institute of Higher Education for 13 years. My research explores vernacular architecture, archi-tourism, and urban studies, applying them to address scientific and business challenges. With more than two decades of experience as a first-class registered architect, I validate the viability of my concepts by leveraging my expertise in these fields and incorporating them into the architectural and urban design of numerous projects. Furthermore, I have actively participated as a scholar in various conferences and served as a jury in tourism film festivals and architectural competitions, both at national and international levels.</p>
+    </section>
+
+    <section id="professional-cv" class="hidden">
+        <h2>Professional Activities - CV</h2>
+        <p><strong>Professional Registration</strong></p>
+        <ul>
+            <li>Licensed Architect (First-Class) for Design, Supervision and Execution, Iranian Ministry of Roads & Urban Development (date of issue: 1998)</li>
+            <li>Registered Architect, Iranian Construction Engineers Organization (date of issue: 1997)</li>
+        </ul>
+        <p><strong>Professional Experiences (Since 2010)</strong></p>
+        <ul>
+            <li>FANAVARAN Consulting Engineers Co. (August 2020-September 2023)
+                <ul>
+                    <li>Senior Advisor/ Head of Architectural Design Group</li>
+                    <li>47-hectares NOSA Project Residential Apartment Complex in Kish Island (90000 m2)</li>
+                </ul>
+            </li>
+            <li>SABAT Kish Consultant Engineers Co. (March 2012- August 2020)
+                <ul>
+                    <li>Principal Architect (Design and Supervision)/ Member of the Board</li>
+                    <li>Mahan Kish Residential Complex (21000 m2)- Selected Project, Venice Biennale 2015 (Iran Pavilion)</li>
+                    <li>Maryam Residential Towers (30000 m2)</li>
+                    <li>Hafez Residential Apartments (9000 m2)</li>
+                    <li>Lillium 4 Star Hotel (13000 m2)</li>
+                    <li>Mahd Boragh 5 Star Hotel and Shopping Center (35000 m2)</li>
+                    <li>Competition of Bargh Commercial and 5 Star Hotel (80000 m2)</li>
+                    <li>Shiraz Zandieh Mixed Use Project International competition in collaboration with RIO Architects (15 Hectares)- Selected as One of the Top Four Proposals</li>
+                </ul>
+            </li>
+            <li>Civil, Water and Urban Services Co. (January 2019-May 2020)
+                <ul>
+                    <li>Advisor to Managing Director in Executive Affairs</li>
+                    <li>Head of the project "Kish Happy Island" " the company, the executive arm of the Kish Free Zone Organization, is taking on its inherent responsibility in providing the desired urban development and infrastructure services and developing the island's infrastructure.</li>
+                </ul>
+            </li>
+            <li>Iran Housing Investment Co. (May 2016-April 2017)
+                <ul>
+                    <li>Director of International Projects</li>
+                    <li>The company is affiliated with the Social Security Organization. It is responsible for managing the design and construction of healthcare and residential projects such as Tehran Lavasani Hospital in Collaboration with SAMSUNG Korean Co., Shiraz Hospital in Collaboration with VAMED Austrian Co., Yazd Cancer Center in Collaboration with HYUNDAI Korean Co.</li>
+                </ul>
+            </li>
+            <li>Mohagheghan Hamrah Andisheh Co. (October 2010- March 2012)
+                <ul>
+                    <li>Technical and Urban Planning Manager</li>
+                    <li>The Project of Reconstruction and Improvement of Urban Fabric Surrounding the Shrine of Imam Reza in Mashhad (101 Hectares)</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="professional-projects" class="hidden">
+        <h2>Professional Activities - Projects</h2>
+        <p>Details about professional projects will go here.</p>
+    </section>
+
+    <section id="academic-cv" class="hidden">
+        <h2>Academic Activities - CV</h2>
+        <p><strong>Teaching and Research Positions</strong></p>
+        <ul>
+            <li>Laboratoire architecture anthropologie (LAA), École nationale supérieure d’architecture de Paris La Villette (ENSAPLV), France (2023 - Now)</li>
+            <li>Visiting Researcher, Gundishapour Research Program on the Title of “Religious Tourism, Heritage and Urban Projects in the City of Mashhad”</li>
+            <li>Eqbal Lahoori Institute of Higher Education, Faculty of Architecture and Urban Planning, Mashhad, Iran (2011 - Now)</li>
+            <li>Architectural Design 1 for M.A. in Architecture (Architectural Planning and Design), (Subject: Affordable Housing Design for 400 families of Low Incomes)</li>
+            <li>Architectural Design 2 for M.A. in Architecture (Conceptual Architectural Design), (Subject: Designing of a Museum for a Metropolitan City)</li>
+            <li>Azad University of South Tehran Branch, Faculty of Architecture and Urban Planning, Tehran, Iran (2014 - 2021)</li>
+            <li>The History of Contemporary Architecture, Architecture and Development, The History of Architecture in Islamic World, Advanced Professional English Language Program for PhD Level in Architecture, Architectural Design 1 for M.A. in Architecture (Architectural Planning and Design), (Subject: Affordable Housing Design for 400 families of Low Incomes)</li>
+            <li>Ferdowsi University, Faculty of Architecture, Urban Planning and Islamic Arts, Mashhad, Iran (2010-2011)</li>
+            <li>Architectural Design 3 for Bachelor of Architecture (Subject: Design of a Four-Star Hotel)</li>
+            <li>University Putra Malaysia, Faculty of Design and Architecture, Kuala Lumpur, Malaysia (2008-2010)</li>
+            <li>Comprehensive Architectural Studio for 5th-year students (Subject: The design of a piece of furniture to a city and an approach from a comprehensive and complex building program to critically-driven speculation)</li>
+        </ul>
+        <p><strong>Research</strong></p>
+        <ul>
+            <li>Gundishapour Research Program on the Title of “Religious Tourism, Heritage and Urban Projects in the City of Mashhad” (2019-Now)</li>
+            <li>P: Iranian Project Manager / C: The Center for International Scientific Studies & Collaboration (CISSC), Ministry of Science, Research & Technology of Iran and French Embassy in Iran, Iran</li>
+            <li>Research Fellowship for Post Graduates on the Title of “The Application of Vernacular Knowledge in Contemporary Second Home Design” (2007-2009)</li>
+            <li>P: Research Assistant / C: School of Graduate Studies, University Putra Malaysia</li>
+        </ul>
+        <p><strong>In Progress Research</strong></p>
+        <ul>
+            <li>Toward a Happy Island: Developing Tourists’ Needs in Close and Open Public Spaces (Case study: Kish Island)</li>
+            <li>Future of Public Spaces Design in the Post-Covid19 Era: Is Architectural Symbiosis a Proper Answer?</li>
+        </ul>
+    </section>
+
+    <section id="academic-publications" class="hidden">
+        <h2>Academic Activities - Journal Publications and Refereed Conferences</h2>
+        <p><strong>Vernacularism</strong></p>
+        <ul>
+            <li>Afshar A., Salleh E., Lucas J. A., “Application of Vernacular Architectural Ideas in New Saffein Village of Kish Island”, published in Pertanika Journal of Social Sciences & Humanities (JSSH), Malaysia, 2010.</li>
+            <li>Afshar A., Salleh E., Lucas J. A., “Vernacular Architecture of Old Saffein Village: The Last Chance for Saving the Architectural Values of Historical Kish Island-Iran”, Presented at ISVS 5, (published in FARU Research Journal), Colombo, Sri Lanka, July 2010</li>
+            <li>Afshar A., Alaghbari W., Salleh E., Salim A., “Affordable Housing Design with Application of Vernacular Architecture: The Case of Kish Island, Iran”, published in International Journal of Housing Markets and Analysis, United Kingdom, 2011.</li>
+            <li>Afshar A., Salleh E., “A dialogue with vernacular architecture in Kamran Diba’s projects in Iran”, accepted for presentation in ISVS 6, Famagusta, North Cyprus, 2013.</li>
+            <li>Afshar A., “Inappropriate Building Regulations and the Loss of Vernacular Architectural Capitals in Kish Island”, published in Conference proceeding of Conference on Roots & Bonds in Art & Architecture in the East, Isfahan, Iran, 2014.</li>
+            <li>Arezoo H., Afshar A., “New Vernacular Housing in Kish Island: Two Strategies, One Mistake”, published in seminar proceeding of 7th International Seminar on Vernacular Settlements, Istanbul, Turkey, 2014</li>
+            <li>Pilevaran S., Afshar A., “Important Indicators for Enhancing Quality of Life in Architectural Design of Community School of Hemat Abad Low-income District”, Submitted to Haft-Shahr: The Journal of Urban Development and Organization, Tehran, Iran, 2015. (in Persian)</li>
+            <li>Afshar A., Arezoo H., “Vernacular Approach in Low-income Houses in Kish Island”, National Conference of Geography, Tourism and Sustainable Development, Tehran, Iran, 2015. (in Persian)</li>
+            <li>Afshar A., Taghizadeh Alamdari E., “Shushtar New Town: Success or Failure?”, accepted for presentation in ARCHDESIGN ’15: Architectural Design Conference, Istanbul, Turkey, 2015.</li>
+            <li>Afshar A., Erfanian Salim M., “Vernacular Architecture Can Answer to Contemporary Second Homes Owners’ Requirements”, Presented in Euro-Asian Tourism Studies Association Inaugural Conference, Taipei & Hualien, Taiwan, 2015.</li>
+            <li>Pilevaran S., Afshar A., Aghalatifi A., “Important Factors in Architectural Design of a Community School in low-income Districts”, International Conference on Human, Architecture, Civil Engineering and City, Tabriz, Iran, 2015. (in Persian)</li>
+            <li>Arezoo H., Afshar A., “Architectural Solutions for Design of Affordable Housing Development in Kish Island”, 1st National Conference of Urban Planning, Urban Management and Sustainable Development, Tehran, Iran, 2015. (in Persian)</li>
+            <li>Yousefizadeh Z., Afshar A., “An Investigation of the Influence of Architectural Environmental Design on Enhancing Human Force”, 6th International Conference on Engineering and Art, Falun, Sweden, June 2016.</li>
+        </ul>
+        <p><strong>Architecture and Tourism</strong></p>
+        <ul>
+            <li>Afshar A., “Different Strategies in Second Home Development and Destruction of local Architectural Values in Kish Island”, published in conference proceedings of 15th Conference of Contemporary Trends in Tourism and Hospitality, Novi Sad, Serbia, 2012.</li>
+            <li>Erfanian Salim M., Afshar A., “Tourism Motivation and Tourists’ Needs in Public Open Space (Case Study: Kish Island, Iran)”, accepted for presentation in ITC’14 – International Tourism Congress, Muscat, Sultanate of Oman, 2014. (As an Awarded Paper, Accepted for Publishing in EUROPEAN JOURNAL OF TOURISM, HOSPITALITY AND RECREATION in 2015)</li>
+            <li>Ahmadi F., Afshar A., Aghalatifi A., “Order of Human Territories in Residential Fabric Surrounding Shrine on Imam Reza, Noghan District”, International Conference on Human, Architecture, Civil Engineering and City, Tabriz, Iran, 2015.  (in Persian)</li>
+            <li>Afshar A., Rahimi Z., “A Study on the Role of Symbiotic in Architectural Design of Tourism”, Conference Proceeding, The 3rd Euro-Asian Tourism Studies Association Inaugural Conference, Nara, Japan, 2017.</li>
+            <li>Ahmadi F., Afshar A., Aghalatifi A., “The explanation of the Transformation of the Realm into the Settlement System in Urban Fabric surrounding the shrine of Imam Reza: Case Study of Mashhad Noghan Neighborhood”, Published in Journal of Researches in Islamic Architecture, Tehran, Iran, 2017. (in Persian)</li>
+            <li>Cheng I-F., Su Che J., Afshar A., et al, “Children’s perceptions of spouses’dominance in family decision on issuesof vacation: A 25-society survey”, Conference Proceeding, The 4th Euro-Asian Tourism Studies Association Inaugural Conference, Dijon, France, 2018.</li>
+            <li>Afshar A., Hakimian Sh., “Return Life to the City Center of Tehran: Oudlajan Food and Beverage Court”, Conference Proceeding, The 4th Euro-Asian Tourism Studies Association Inaugural Conference, Dijon, France, 2018.</li>
+            <li>Hakimian S., Afshar A., Kowalczyk-Anioł J., “Returning life to the center of Tehran: The Oudlajan foodscape”, Published in Turyzm, Poland, Vol. 29, No. 2, 2019.</li>
+            <li>Afshar Ali & Erfanian Salim Mona, “Bani Adam (Children of Adam)”, Published in Moondo (https://moondo.info/bani-adam-children-of-adam/), Rome, Italy, 22 April 2020</li>
+            <li>Afshar Ali, “It’s a Common Pain”, EATSA Art & Tourism BLOG (https://eatsa.tourfilm-festival.com/its-a-common-pain/), Portugal and India, 17 February 2021</li>
+        </ul>
+        <p><strong>Urban Issues</strong></p>
+        <ul>
+            <li>Afshar A., “The Role of People in Renovation and Regeneration of the 2nd Quarter of Old Fabric of Surrounding the Holy Shrine of Imam Reza in Mashhad”, published in Researches and Educational Journal of Tashakkol, Tehran, Iran, 2010 (in Persian)</li>
+            <li>Safaee M. M., Afshar A., Derambakhsh A., “Construction of Tohid Intercity Tunnel and Huge Changes in its Surrounding in Old Part of Tehran, Iran”, published in conference proceedings of 13th World Conference of ACUUS (Advances in Underground Space Development), Singapore, Nov. 2012.</li>
+            <li>Afshar A., Pandi S., “Increasing the Level of Social Interaction in Physical Public Spaces of Mashhad City”, 1st National Conference of Urban Planning, Urban Management and Sustainable Development, Tehran, Iran, 2015. (in Persian)</li>
+            <li>Afshar A., Erfanian Salim M., “Applying the Principles of Small Island Development State in Tourism Development Guidelines of Kish Island”, accepted for presentation in the 8th International Tourism Congress, Peniche, Portugal, 2015.</li>
+            <li>Afshar A., Erfanian Salim M., “Urban Design as a Practical Vehicle for a Sustainable Tourism Development”, Conference Proceeding, The 2nd Euro-Asian Tourism Studies Association Inaugural Conference, Lisbon, Portugal, 2016.</li>
+            <li>Erfanian Salim M., Afshar A., “Socio-cultural Factors Affecting Tourists‘ Needs for a Public Open Space: The Case of Kish Island, Iran”, accepted for presentation in International Seminars on Vernacular Settlements, Makassar, Indonesia, 2016.</li>
+            <li>Ahmadi F., Afshar A., “The Role of Place Attachment in Regeneration Process of Noghan District”, Published in Haft-Shahr: The Journal of Urban Development and Organization, Tehran, Iran, 2017. (in Persian)</li>
+            <li>Kowalczyk-Anioł J., Afshar A., “Tourism gentrification as a tool for the city development. The example of Mashhad in Iran”, Published in Turystyka Kulturowa, Poland, Vol. 2, 2018.</li>
+            <li>Afshar A., Erfanian Salim M., “Toward a Happy Island: Developing Tourists’ Needs in Urban Open Public Spaces in Kish Island”, The 6th Annual Conference of EATSA – Euro-Asia Tourism Studies Association, GLOBAL TOURISM CONNECTING INSULARITIES IN ASIA AND EUROPE, Sardinia, Italy, June 2020</li>
+        </ul>
+    </section>
+
+    <section id="academic-supervisory" class="hidden">
+        <h2>Academic Activities - Supervisory</h2>
+        <p><strong>MSc Supervisor</strong></p>
+        <ul>
+            <li>Sanaz Pilevaran; The Role of Community School in Enhancing Quality of Life in Hematabad Low-Incomes District, Eqbal Lahoori Institute of Higher Education, 2013</li>
+            <li>Hassan Arezoo; Vernacularism in Affordable Housing Design on Kish Island, Islamic Azad University Neyshabur Branch, 2013</li>
+            <li>Amir Esmaili; A Center for Architectural Researches: Explanation of Environmental Characteristics in Sustainable Architecture, Islamic Azad University Neyshabur Branch</li>
+            <li>Farzaneh Ahmadi; A Study of Urban Realm and Its Effects on Physical Aspect of the Houses in Old Fabric of Mashhad, Eqbal Lahoori Institute of Higher Education, 2014</li>
+            <li>Salmaan Pandi; Reconsidering City Theater: Social Interaction and Architectural Design, Heris Islamic Azad University, 2014</li>
+            <li>Ali Vafaei; A System for Mosque Architectural Design to Improve Social Interaction in New Neighborhoods of Mashhad, Eqbal Lahoori Institute of Higher Education, 2014</li>
+            <li>Hassan Chezgi; Regenerating by Architecture: Redesign of a Bazaar in Noghan District, Islamic Azad University Neyshabur Branch, 2014</li>
+            <li>Reihaneh Jafarian Moghadam; Social Aspect in Sustainable Housing Design in Tabas, Eqbal Lahoori Institute of Higher Education, 2014</li>
+            <li>Meysam Safaei; The Role of Regional Architecture in Design of a Commercial Building in Tehran, Sirjan Science and Research Branch of Islamic Azad University, 2015</li>
+            <li>Homa Samyaad; A Health Village in Tehran: Investigation into Health through Green Architectural Design, Sirjan Science and Research Branch of Islamic Azad University, 2015</li>
+            <li>Behnaz Pouya; Design for a Cultural Center from Mirmiran’s Architectural Viewpoint, Eqbal Lahoori Institute of Higher Education, 2015</li>
+            <li>Mohammadreza Parhizkar; Re-Establishing of Identical Characteristics in Residential Apartments of Amiriyeh in Mashhad, Eqbal Lahoori Institute of Higher Education, 2015</li>
+            <li>Zartosht Khalili Taari; A Design System for City Hotels in Tehran with Critical Regionalism Approach, Islamic Azad University Neyshabur Branch, 2016</li>
+            <li>Zohreh Rahimi; Symbiotic Approach in Architecture of a Vacation Village in Shahrood, Islamic Azad University Tehran South Branch, 2016</li>
+            <li>Sina Aliasgari; A Centre for Eco-tourism as a Tourism Destination: Study on the Role of Architectural Design, Islamic Azad University Tehran South Branch, 2017</li>
+            <li>Farzad Fazeli; Application of Eartbag (Abr-khesht in Persian) Method in Design of a Tourism Complex on the Edge of Kavir National Park, Islamic Azad University Tehran South Branch, 2017</li>
+            <li>Nafiseh Rahmati; The Role of Halal Tourism in Architectural Design of A Health Village: The Case of Baraghan, Islamic Azad University Tehran South Branch, 2017</li>
+            <li>Elnaz Thaghizadeh Alamdari; Analyzing the Architectural Characteristics of Bornova’s Levantine’s Mansions, Yasar University, Izmir, Turkey, 2017</li>
+            <li>Shiva Hakimian; Tourism, Residential and Cultural Complex in Oudlajan Neighborhood with Emphasis on the Revival of Missing Persian Architectural Characteristics, Islamic Azad University Tehran South Branch, 2018</li>
+            <li>Manijeh-Sadat Fatemi; Multifunctional Tourism Complex in Suburb of Tehran with Organic Approach, Islamic Azad University Tehran South Branch, 2019</li>
+            <li>Navid Khademzadeh; “Molk’e Minoo“ Complex, An Architectural Design with Approach to creating a space for counter-measure activities against social discordant, Islamic Azad University Tehran South Branch, 2019</li>
+            <li>Maliheh Firouzyar; Children Recreational-Educational Center in Tehran with a Participatory Mosaic Approach, Islamic Azad University Tehran South Branch, 2020</li>
+            <li>Ali Akbari; Social Interaction in Design of Public Spaces: the Case of Sirous Neighborhood in Tehran, Islamic Azad University Tehran South Branch, 2020</li>
+            <li>Saeideh Sajjadi; Re-application of Colored Glass in Office-Commercial Buildings in Historic City Center of Mashhad, Eqbal Lahoori Institute of Higher Education, 2020</li>
+            <li>Mahdi Behamin; Searching for an Optimal Pattern of Vernacular Houses in Mashhad Using Space Syntax Software, Eqbal Lahoori Institute of Higher Education, 2021</li>
+            <li>Faezeh Nassaj; Architectural Vernacularism in a Multi-purpose Tourism Complex in Torghabeh City, Eqbal Lahoori Institute of Higher Education, 2021</li>
+            <li>Azam Iravani; Improving the Quality of Built Environment in Rural Tourism Destinations (The Case of Villages of Neyshabur City), Eqbal Lahoori Institute of Higher Education, 2022</li>
+            <li>Amin Zangeneh; Explaining the Relationship between Architectural Design and the Length of Stay of Tourists in Mashhad, Eqbal Lahoori Institute of Higher Education, 2022</li>
+            <li>Faezeh Hasanzadeh; Increasing Social-artistic Interactions in the Architectural Design of a House for Elderly Artists, Eqbal Lahoori Institute of Higher Education, 2023</li>
+            <li>Samira Biniaz; Psychological Security in the Architectural Design of Medium-scale Residential Complexes in Mashhad, Eqbal Lahoori Institute of Higher Education, 2023</li>
+            <li>Azadeh Sadat Fatemi; The Role of Public Spaces in Improving the Quality of Life of Social Housing in Seyedi Neighborhood, Eqbal Lahoori Institute of Higher Education, 2023</li>
+        </ul>
+    </section>
+
+    <section id="other" class="hidden">
+        <h2>Other Activities</h2>
+        <p><strong>Academics</strong></p>
+        <ul>
+            <li>Guest Lecturer, Localization and Globalization of Tourism in Europe and Asia, Faculty of Global and Regional Studies, University of the Ryukyus, Japan, 2021-2024</li>
+            <li>Journal Reviewer, Studies in Geography, University of Lodz, Poland, 2023</li>
+            <li>Chapter Reviewer, Book title “Digital Transformation of the Hotel Industry: Theories, practices, and global challenges”, Published by Springer, 2022</li>
+            <li>Project Grant, Adolescents and Family Vacation Decision Making: A Global Survey. Ministry of Science and Technology, Taiwan, 2016-2020.</li>
+            <li>Co-chair of Tourism Café Lab, The 6th Annual Conference of EATSA – Euro-Asia Tourism Studies Association, GLOBAL TOURISM CONNECTING INSULARITIES IN ASIA AND EUROPE, Sardinia, Italy, June 2020</li>
+            <li>Guest Lecturer, For Courses: New Directions in Urban Housing, Sustainable Transformation and Architecture, Housing in Developing Countries; Faculty of Architecture, Istanbul Technical University, 2015</li>
+        </ul>
+        <p><strong>Conferences</strong></p>
+        <ul>
+            <li>A Member of Scientific Committee, Annual Conference of EATSA – Euro-Asia Tourism Studies Association, Different Countries in Europe and Asia, 2016-2024</li>
+            <li>Panelist and A Member of Scientific Committee, XIII International Scientific Conference Tourism in Social Sciences 2024, Jagiellonian University, Krakow, Poland, 2024</li>
+            <li>A Member of Scientific Committee (Country Chair), International Conference on Digital Economy, The impact of emerging technologies of the digital economy, Different countries in Europe and Africa, 2016-2023.</li>
+            <li>Panelist, 10th India International Hotel Travel and Tourism Research Conference, “Strategizing Tourism & Hospitality Facilities for the New Normal”, New Delhi, India, February 2021</li>
+            <li>A Member of the Scientific Committee, The International Conference on Tourism Marketing and Destination Branding, Viseu, Portugal, October 2020</li>
+            <li>A Member of the Scientific Committee, The National Convention on the Coastline Architecture of Southern Iran and the Cities of Tomorrow, Kish Island, Iran, April 2020</li>
+            <li>Keynote Speaker, 10th India International Hotel Travel and Tourism Research Conference: “Transforming Hospitality & Tourism: Sustainable Goals & Strategies for Future”, New Delhi, India, February 2020</li>
+            <li>A Member of Scientific Committee, The International Conference on Tourism Marketing and Destination Branding, Torres Verdas, Portugal, October 2019</li>
+            <li>A Member of Scientific Committee (Iran Chair), The 3rd International Conference on Digital Economy, The Impact of Emerging Technologies of The Digital Economy, Brest Business School (France), April 2018.</li>
+            <li>A Member of Scientific Committee, Iran Architecture Conference: Past, Present and Future, The Special Themes of Religious and Ritual Spaces, Eqbal Institute of Higher Education, Mashhad, Iran, October 2017</li>
+        </ul>
+        <p><strong>Architectural Competitions</strong></p>
+        <ul>
+            <li>Jury Member, Urban Corridor Design Competition (Abshar Neighborhood), Municipality of Isfahan, Iran, 2023</li>
+            <li>Jury Member, Redesigning the Architecture of Tisa Commercial-Residential Complex Competition, Tisa Investment Development and Holding Company, Iran, 2020</li>
+            <li>Jury Member, Grand Recreational Pier of Kish Island Architectural Competition, Kish Free Zone Organization, Iran, 2020</li>
+            <li>Jury Member, Nations Square Urban Design Competition, Kish Free Zone Organization, Iran, 2019</li>
+        </ul>
+        <p><strong>Film Festivals and Workshops</strong></p>
+        <ul>
+            <li>Jury Member, The 9th to the 17th Art & Tour International Film Festival, Portugal, 2016-2024</li>
+            <li>Lecturer, International Workshop on Architecture and Cinema, A Cooperative Academic Partnership Program (The National School of Architecture of Paris-La Villette and Eqbal Lahoori Institute of Higher Education), Architecture and City in The Camera Frame, Yazd, Iran, 2016-2022 (Five Annual Workshops)</li>
+            <li>Ambassador, The 2nd and the 3rd Natourale Film Festival, Wiesbaden, Germany, 2022-2024</li>
+            <li>Jury Member, The 11th Zagreb Tourism Film Festival, Zagreb, Croatia, October 2022</li>
+            <li>Member of the board of Directors, EATSA Film Festival, Coimbra (Portugal) & Goa (India), September 2021</li>
+            <li>Jury Member, The 11th and 12th Tourfilm Riga, International Tourism Film Festival, Riga, Latvia, 2018 and 2019</li>
+            <li>Jury Member, Kish Happy Island National Mobile Film Festival, Kish Island, Iran, March 2019</li>
+            <li>Jury Member, The 2nd International TERRES Travel Film Festival, Tortosa, Catalonia, Spain, May 2019</li>
+        </ul>
+        <p><strong>Films</strong></p>
+        <ul>
+            <li>Director of the Project and Co-Producer, The Movie “A Story of Caldas da Rainha”, Produced in Maajara Productions, Director: Mona Erfanian Salim, Producer: Sepideh Berenji, Caldas da Rainha, Portugal, 2023</li>
+            <li>Senior Advisor, The Movie of “Yerevan’s Blue”, Produced in Mahta Tasvir Productions, Director: Aboulfazl Memarian, Producer: Erfan Qasempour, Yerevan, Armenia, 2022</li>
+            <li>Senior Advisor, The Movie “The Mysteries of Takht’e Soleyman”, Produced in East Art Phoenix Institute of Art and Culture, Director and Producer: Armin Isarian, Takaab and Tehran, Iran, 2018</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Contact Me</h2>
+        <ul class="contact-info">
+            <li>Email: <a href="mailto:alafshar@gmail.com">alafshar@gmail.com</a></li>
+            <li>Phone: +98 912 186 5642, +33 7 66 13 10 12</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/ali-afshar-33795920" target="_blank">linkedin.com/in/ali-afshar-33795920</a></li>
+        </ul>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
